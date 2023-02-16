@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 
-import { Button, typography } from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { Button } from "@mui/material";
+import { purple, red } from "@mui/material/colors";
+import TextField from "@mui/material/TextField";
+
+const primary = red[500]; // #f44336
+
+const accent = purple.A200; // #e040fb (alternative method)
 
 function MyForm() {
   const [details, setDetails] = useState({
@@ -22,29 +29,29 @@ function MyForm() {
     <main>
       <div>
         <h1 className='heading'>Personal info</h1>
-        <typography>
+        <Typography variant='h5' color='textSecondary' gutterBottom>
           Please provide your name, email address, and phone number.
-        </typography>
+        </Typography>
       </div>
       <form onSubmit={handleSubmit}>
         <div>
           <label className='label'>
             <h5>Name</h5>
-            <input type='text' name='name' onChange={handleChange} />
+            <TextField type='text' name='name' onChange={handleChange} />
           </label>
         </div>
         <label className='label'>
           <h5>Email Address</h5>
-          <input type='email' name='email' onChange={handleChange} />
+          <TextField type='email' name='email' onChange={handleChange} />
         </label>
         <label className='label'>
           <h5>Phone Number</h5>
-          <input type='number' name='phoneNumber' onChange={handleChange} />
+          <TextField type='number' name='phoneNumber' onChange={handleChange} />
         </label>
         <div>
-          <button type='submit' variant='contained'>
+          <Button type='submit' variant='contained' color='primary'>
             Next Step
-          </button>
+          </Button>
         </div>
       </form>
     </main>
