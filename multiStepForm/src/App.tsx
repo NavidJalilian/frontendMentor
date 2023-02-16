@@ -1,11 +1,11 @@
 import { Button } from "@mui/material";
 import { useState } from "react";
+import Form from "./components/Form/Form";
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <h1>Vite + React</h1>
+      <Form></Form>
     </div>
   );
 }
