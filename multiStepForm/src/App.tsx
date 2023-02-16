@@ -1,14 +1,19 @@
 import { useState } from "react";
-
+import Form from "./components/Form/Form";
+import Steps from "./components/Form/Steps";
 function App() {
-  const [count, setCount] = useState(0);
-  Vite + React;
   return (
-    <div className="App">
-      <h1>Vite + React</h1>
-    </div>
+    <>
+      <div className='window'>
+        <div>
+          <Steps />
+        </div>
+        <div>
+          <Form />
+        </div>
+      </div>
+    </>
   );
 }
-
 
 export default App;

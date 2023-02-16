@@ -1,11 +1,10 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: hsl(217, 100%, 97%);
 }
 
 h1 {
@@ -58,7 +58,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: hsl(0, 0%, 100%);
   }
   a:hover {
     color: #747bff;
@@ -66,4 +66,43 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.window {
+  background-color: white;
+  width: 1000px;
+  height: 500px auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.label {
+  color: #060829;
+}
+.heading {
+  color: #060829;
+}
+.para {
+  color: rgb(164, 161, 161);
+}
+.btn {
+  background-color: hsl(213, 96%, 18%);
+}
+.navbar {
+  padding: 10px;
+  width: 300px;
+  background-image: url("./assets/images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.btn-round {
+  border-radius: 50%;
+  width: 45px;
+
+  background-color: hsl(0, 0%, 0%, 0%);
+  border: solid 1px #f9f9f9;
+}
+.option {
+  display: ruby;
 }
