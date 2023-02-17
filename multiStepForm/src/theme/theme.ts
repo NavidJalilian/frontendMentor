@@ -1,44 +1,32 @@
-import { createTheme } from "@mui/system";
+import { createTheme, PaletteColorOptions } from "@mui/material/styles";
 
-declare module "@mui/material/styles" {
-  interface Palette {
-    neutral: {
-      20: string;
-      40: string;
-      60: string;
-      80: string;
-      100: string;
-    };
-    blue: {
-      100?: string;
-      80?: string;
-      60?: string;
-      40?: string;
-    };
-    red: {
-      main: string;
-    };
-  }
-}
-
-const theme = createTheme({
+const customTheme = createTheme({
   palette: {
-    blue: {
-      100: "hsl(213, 96%, 18%)",
-      80: " hsl(243, 100%, 62%)",
-      60: "hsl(228, 100%, 84%)",
-      40: "hsl(206, 94%, 87%)",
+    primary: {
+      dark: "hsl(213, 96%, 18%)",
+      main: " hsl(243, 100%, 62%)",
+      light: "hsl(228, 100%, 84%)",
+      contrastText: "hsl(206, 94%, 87%)",
     },
-    red: {
+    error: {
       main: "hsl(354, 84%, 57%)",
     },
-    neutral: {
-      20: "hsl(231, 11%, 63%)",
-      40: "hsl(229, 24%, 87%)",
-      60: "hsl(217, 100%, 97%)",
-      80: "hsl(231, 100%, 99%)",
-      100: "hsl(0, 0%, 100%)",
+    grey: {
+      "700": "hsl(231, 11%, 63%)",
+      "500": "hsl(229, 24%, 87%)",
+      "300": "hsl(217, 100%, 97%)",
+      "200": "hsl(231, 100%, 99%)",
+      "100": "hsl(0, 0%, 100%)",
     },
   },
+  typography: {
+    fontFamily: "Ubuntu",
+  },
+  // other custom theme properties here
 });
+
+const theme = createTheme({
+  ...customTheme,
+});
+
 export default theme;
