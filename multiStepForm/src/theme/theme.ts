@@ -1,5 +1,4 @@
-import { PaletteColorOptions, Theme } from "@mui/material";
-import { createTheme, SxProps } from "@mui/system";
+import { createTheme } from "@mui/system";
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -21,7 +20,7 @@ declare module "@mui/material/styles" {
     };
   }
 }
-// export type StyleType = Record<"root" | , SxProps<Theme>>;
+
 const theme = createTheme({
   palette: {
     blue: {
