@@ -7,6 +7,7 @@ import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
+import styles from "./Steps.style";
 
 const steps = [
   {
@@ -45,7 +46,7 @@ export default function Steps() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400 }}>
+    <Box sx={styles.root}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
