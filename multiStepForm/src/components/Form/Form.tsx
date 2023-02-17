@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import styles from "./Form.style";
+import { FormProps } from "./Form.type";
 
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
-import { purple, red } from "@mui/material/colors";
 import TextField from "@mui/material/TextField";
+import { useState } from "react";
 
-const primary = red[500]; // #f44336
+// const primary = red[500]; // #f44336
 
-const accent = purple.A200; // #e040fb (alternative method)
+// const accent = purple.A200; // #e040fb (alternative method)
 
-function MyForm() {
+function Form() {
   const [details, setDetails] = useState({
     name: "",
     email: "",
@@ -57,4 +58,4 @@ function MyForm() {
     </main>
   );
 }
-export default MyForm;
+export default Form;

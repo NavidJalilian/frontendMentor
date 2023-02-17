@@ -1,19 +1,13 @@
+import { Button } from "@mui/material";
 import { useState } from "react";
-import Form from "./components/Form/Form";
-import Steps from "./components/Form/Steps";
+import Form from "./components/Form";
+import MultiStepForm from "./pages/MultiStepForm";
 
 function App() {
   return (
-    <>
-      <div className="window">
-        <div>
-          <Steps />
-        </div>
-        <div>
-          <Form />
-        </div>
-      </div>
-    </>
+    <div className="App">
+      <MultiStepForm />
+    </div>
   );
 }
 
