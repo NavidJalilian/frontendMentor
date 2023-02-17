@@ -1,6 +1,5 @@
 import { StylesType } from "../../theme/type";
 
-// Define the object type
 const styles: StylesType<"root" | "form" | "input" | "textarea"> = {
   root: {
     padding: 1,

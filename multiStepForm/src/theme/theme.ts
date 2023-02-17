@@ -4,7 +4,7 @@ const customTheme = createTheme({
   palette: {
     primary: {
       dark: "hsl(213, 96%, 18%)",
-      main: " hsl(243, 100%, 62%)",
+      main: "hsl(243, 100%, 62%)",
       light: "hsl(228, 100%, 84%)",
       contrastText: "hsl(206, 94%, 87%)",
     },

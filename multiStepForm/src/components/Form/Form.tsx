@@ -7,10 +7,6 @@ import TextField from "@mui/material/TextField";
 import { useState } from "react";
 import { Box } from "@mui/system";
 
-// const primary = red[500]; // #f44336
-
-// const accent = purple.A200; // #e040fb (alternative method)
-
 function Form() {
   const [details, setDetails] = useState({
     name: "",
