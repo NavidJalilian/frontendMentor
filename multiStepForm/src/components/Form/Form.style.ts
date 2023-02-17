@@ -4,7 +4,8 @@ import { StylesType } from "../../theme/type";
 const styles: StylesType<"root" | "form" | "input" | "textarea"> = {
   root: {
     padding: 1,
-    color: ({ palette }) => palette.neutral[40],
+    fontFamily: "Ubuntu",
+    color: ({ palette }) => palette.grey[100],
   },
   form: {
     display: "flex",
