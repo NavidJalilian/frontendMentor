@@ -5,10 +5,14 @@ import Steps from "../../components/Steps";
 import styles from "./MultiStepForm.style";
 
 export default function MultiStepForm() {
+
+
   return (
     <Box sx={styles.root}>
-      <Steps />
-      <Form />
+      <Box sx={styles.content}>
+        <Steps />
+        <Form />
+      </Box>
     </Box>
   );
 }
